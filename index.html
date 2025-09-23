@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitra Puttabudhi - Full Stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge {
+            background: linear-gradient(45deg, #3B82F6, #1E40AF);
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .typing-animation::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    <i class="fas fa-code mr-2"></i>Chaitra Puttabudhi
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
+                    <a href="#projects"
+                        class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Skills</a>
+                    <a href="#contact"
+                        class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com/Chaitraputtabudhi" target="_blank"
+                        class="text-gray-600 hover:text-blue-600 text-lg">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:chaitraputtabudhi@gmail.com"
+                        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen gradient-bg flex items-center justify-center text-white relative overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="animate-fade-in">
+                <img src="" alt="Chaitra Puttabudhi"
+                    class="w-40 h-40 rounded-full mx-auto mb-8 border-4 border-white shadow-xl animate-float object-cover">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Hi, I'm <span class="text-yellow-400">Chaitra Puttabudhi</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 typing-animation">Full Stack Developer & Problem Solver</p>
+                <p class="text-lg mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed">
+                    I build modern web applications with React, Node.js, and cutting-edge technologies.
+                    Passionate about creating user-friendly solutions and writing clean, maintainable code.
+                    Currently looking for exciting opportunities to contribute to innovative projects.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="#projects"
+                        class="bg-yellow-400 text-black px-8 py-4 rounded-lg hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg font-semibold inline-flex items-center">
+                        <i class="fas fa-rocket mr-2"></i>View My Projects
+                    </a>
+                    <a href="assets/resume.pdf" target="_blank"
+                        class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-gray-800 transition-all transform hover:scale-105 inline-flex items-center">
+                        <i class="fas fa-download mr-2"></i>Download Resume
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/Chaitraputtabudhi" target="_blank"
+                        class="text-white hover:text-yellow-400 transition-colors transform hover:scale-110">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chai-puttabudhi/" target="_blank"
+                        class="text-white hover:text-yellow-400 transition-colors transform hover:scale-110">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                    <a href="mailto:chaitraputtabudhi@gmail.com"
+                        class="text-white hover:text-yellow-400 transition-colors transform hover:scale-110">
+                        <i class="fas fa-envelope text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Tech Icons -->
+        <div class="absolute top-20 left-10 text-white/20 animate-float">
+            <i class="fas fa-code text-4xl"></i>
+        </div>
+        <div class="absolute bottom-20 right-10 text-white/20 animate-float" style="animation-delay: 1s;">
+            <i class="fab fa-react text-4xl"></i>
+        </div>
+        <div class="absolute top-1/2 left-20 text-white/20 animate-float" style="animation-delay: 2s;">
+            <i class="fab fa-node-js text-4xl"></i>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="bg-white py-8 shadow-lg">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">15+</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-green-600 mb-2">5+</div>
+                    <div class="text-gray-600">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-purple-600 mb-2">8</div>
+                    <div class="text-gray-600">Technologies</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-red-600 mb-2">100%</div>
+                    <div class="text-gray-600">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    ⭐ Featured Project
+                </div>
+                <h2 class="text-4xl font-bold mb-4">School Management System</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">My most comprehensive full-stack application showcasing
+                    advanced development skills</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2">
+                    <!-- Project Image/Demo -->
+                    <div
+                        class="relative bg-gradient-to-br from-blue-50 to-indigo-100 p-8 flex items-center justify-center">
+                        <div
+                            class="bg-white rounded-lg shadow-lg p-4 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&h=300&fit=crop&auto=format"
+                                alt="School Management Dashboard" class="w-full h-64 object-cover rounded">
+                            <div
+                                class="absolute -top-2 -right-2 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                                In Progress
+                            </div>
+                        </div>
+                        <!-- Floating Elements -->
+                        <div
+                            class="absolute top-4 right-4 bg-blue-500 text-white p-2 rounded-lg text-xs animate-bounce">
+                            React
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-green-500 text-white p-2 rounded-lg text-xs animate-bounce"
+                            style="animation-delay: 0.5s;">
+                            Node.js
+                        </div>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="p-8 md:p-12">
+                        <div class="flex items-center mb-6">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mr-3">
+                                ⭐ Latest Work
+                            </span>
+                            <span class="text-gray-500 text-sm">In Progress</span>
+                        </div>
+
+                        <h3 class="text-3xl font-bold mb-6">School Management System</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A comprehensive full-stack web application for managing school operations. Built with modern
+                            technologies,
+                            featuring user authentication, role-based access control, event management, gallery system,
+                            and admin dashboard
+                            with real-time analytics.
+                        </p>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="tech-badge text-white px-3 py-1 rounded-full text-sm font-medium">React
+                                18</span>
+                            <span
+                                class="tech-badge text-white px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                            <span
+                                class="tech-badge text-white px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                            <span
+                                class="tech-badge text-white px-3 py-1 rounded-full text-sm font-medium">Express.js</span>
+                            <span class="tech-badge text-white px-3 py-1 rounded-full text-sm font-medium">Tailwind
+                                CSS</span>
+                            <span class="tech-badge text-white px-3 py-1 rounded-full text-sm font-medium">JWT
+                                Auth</span>
+                        </div>
+
+                        <!-- Key Features -->
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
+                                <span><strong>Authentication System</strong> - Secure login with role-based access
+                                    control</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
+                                <span><strong>Event Management</strong> - CRUD operations with real-time updates</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
+                                <span><strong>File Upload System</strong> - Image gallery with upload from local files
+                                    functionality</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
+                                <span><strong>Admin Dashboard</strong> - Analytics and user management panel</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-check-circle text-green-500 mr-3 text-lg"></i>
+                                <span><strong>Responsive Design</strong> - Mobile-first approach with modern UI</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://github.com/Chaitraputtabudhi/" target="_blank"
+                                class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors inline-flex items-center justify-center font-medium">
+                                <i class="fab fa-github mr-2"></i>View Source Code
+                            </a>
+                            <!-- <a href="#project-details"
+                                class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-100 transition-all inline-flex items-center justify-center font-medium">
+                                <i class="fas fa-info-circle mr-2"></i>Learn More
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Preview -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Other Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A collection of my work across different technologies and
+                    domains</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- E-commerce Platform -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="relative">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">
+                            FEATURED
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Full-featured online store with cart functionality, secure payments via Stripe,
+                            and comprehensive admin panel for inventory management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">React</span>
+                            <span
+                                class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-medium">Node.js</span>
+                            <span
+                                class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm font-medium">MongoDB</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm font-medium">Stripe</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-external-link-alt text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Management App -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="relative">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Task Management App</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Collaborative project management tool with real-time updates,
+                            drag-and-drop interface, and team collaboration features.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-medium">Vue.js</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm font-medium">Express</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm font-medium">Socket.io</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">MySQL</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-external-link-alt text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather App -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="relative">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Weather Forecast App</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Beautiful Progressive Web App with location-based weather forecasts,
+                            offline functionality, and push notifications.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">React</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm font-medium">Weather
+                                API</span>
+                            <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded text-sm font-medium">PWA</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm font-medium">Service
+                                Worker</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                                <i class="fas fa-external-link-alt text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="text-center mt-12">
+                <a href="https://github.com/Chaitraputtabudhi" target="_blank"
+                    class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center text-lg font-medium shadow-lg hover:shadow-xl">
+                    <i class="fab fa-github mr-3"></i>View All 15+ Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Let's Build Something Amazing Together</h2>
+            <p class="text-xl mb-12 max-w-2xl mx-auto opacity-90">
+                I'm always open to discussing new opportunities and exciting projects.
+                Let's connect and see how we can work together!
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                    <i class="fas fa-envelope text-3xl mb-4 text-yellow-400"></i>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="opacity-90">chaitraputtabudhi@gmail.com</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                    <i class="fab fa-linkedin text-3xl mb-4 text-yellow-400"></i>
+                    <h3 class="text-xl font-bold mb-2">LinkedIn</h3>
+                    <p class="opacity-90">linkedin.com/in/chai-puttabudhi</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                    <i class="fas fa-phone text-3xl mb-4 text-yellow-400"></i>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <p class="opacity-90">+1 (650) 541-1799</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="mailto:chaitraputtabudhi@gmail.com"
+                    class="bg-yellow-400 text-black px-8 py-4 rounded-lg hover:bg-yellow-500 transition-all transform hover:scale-105 shadow-lg font-semibold inline-flex items-center">
+                    <i class="fas fa-envelope mr-3"></i>Send Email
+                </a>
+                <a href="https://linkedin.com/in/chai-puttabudhi" target="_blank"
+                    class="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-lg hover:bg-yellow-400 hover:text-black transition-all transform hover:scale-105 inline-flex items-center">
+                    <i class="fab fa-linkedin mr-3"></i>Connect on LinkedIn
+                </a>
+                <a href="assets/resume.pdf" target="_blank"
+                    class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 inline-flex items-center">
+                    <i class="fas fa-download mr-3"></i>Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 text-center">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/Chaitraputtabudhi" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/chai-puttabudhi/" target="_blank"
+                    class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="mailto:chaitraputtabudhi@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">
+                &copy; 2025 Chaitra Puttabudhi. Built with ❤️ and hosted on GitHub Pages.
+                <br><span class="text-sm">Available for hire • Open to new opportunities</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white');
+                navbar.classList.remove('bg-white/95');
+            } else {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white');
+            }
+        });
+    </script>
+</body>
+
+</html>
